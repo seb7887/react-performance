@@ -8,5 +8,6 @@ module.exports = merge([
       limit: 15000,
       name: '[name].[ext]'
     }
-  })
+  }),
+  parts.loadFiles()
 ]);

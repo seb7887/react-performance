@@ -1,11 +1,7 @@
 import React from 'react';
-import banner from './images/banner.jpg';
 
-const App: React.FC = () => (
-  <>
-    <img src={banner} alt="banner" />
-    <h1>Hello Typescript</h1>
-  </>
-);
+import Home from './components/Home';
+
+const App: React.FC = () => <Home />;
 
 export default App;

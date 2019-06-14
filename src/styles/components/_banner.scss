@@ -1,0 +1,13 @@
+.banner {
+  min-height: 300px;
+  margin: -1rem -0.5rem;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: right;
+  background-image: url('../images/banner.svg');
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  perspective: 1px;
+}

@@ -25,7 +25,12 @@ exports.loadSass = ({ include }) => ({
     rules: [
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          'resolve-url-loader'
+        ],
         include
       }
     ]
@@ -45,13 +50,24 @@ exports.loadImages = ({ include, exclude, options } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.(png|gif|jpe?g|svg)$/,
+        test: /\.(png|gif|jpe?g)$/,
         include,
         exclude,
         use: {
           loader: 'url-loader',
           options
         }
+      }
+    ]
+  }
+});
+
+exports.loadFiles = ({ include, exclude, options } = {}) => ({
+  module: {
+    rules: [
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: 'file-loader'
       }
     ]
   }
