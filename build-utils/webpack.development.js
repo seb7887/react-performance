@@ -6,5 +6,6 @@ module.exports = merge([
     host: process.env.HOST,
     port: 3000
   }),
-  parts.loadImages()
+  parts.loadImages(),
+  parts.loadFiles()
 ]);

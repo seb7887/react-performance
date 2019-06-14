@@ -1,0 +1,33 @@
+.satellite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+
+  &-name {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__name {
+    color: $pink;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: row;
+
+    &__location {
+      padding-right: 1rem;
+    }
+  }
+}

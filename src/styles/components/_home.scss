@@ -1,0 +1,7 @@
+.content {
+  display: grid;
+  grid-template-areas:
+    'panel'
+    'satellites';
+  padding: 2rem 2rem;
+}
