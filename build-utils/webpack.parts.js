@@ -66,7 +66,7 @@ exports.loadFiles = ({ include, exclude, options } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(eot|svg|webp|ttf|woff|woff2)$/,
         use: 'file-loader'
       }
     ]
