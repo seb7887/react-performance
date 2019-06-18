@@ -4,7 +4,7 @@ import { ISatellite } from '../types/Satellite';
 
 const chance = new Chance();
 
-export const randomSatelite = (max: number): ISatellite => {
+export const randomSatellite = (max: number = 50): ISatellite => {
   const satellite: ISatellite = {
     isActive: chance.bool({ likelihood: 70 }),
     id: chance.integer({ min: 1, max }),
@@ -16,11 +16,11 @@ export const randomSatelite = (max: number): ISatellite => {
   return satellite;
 };
 
-export const randomSatellites = (quantity: number = 50) => {
-  const satellites: any = [];
+export const randomSatellites = (quantity: number = 50): ISatellite[] => {
+  const satellites: ISatellite[] = [];
 
   for (let i: number = 0; i < quantity; i++) {
-    const satellite = randomSatelite(quantity);
+    const satellite = randomSatellite(quantity);
     satellites[satellite.id] = satellite;
   }
 

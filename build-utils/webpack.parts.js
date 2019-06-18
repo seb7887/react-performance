@@ -50,7 +50,7 @@ exports.loadImages = ({ include, exclude, options } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.(png|gif|jpe?g)$/,
+        test: /\.(png|gif|jpe?g|svg)$/,
         include,
         exclude,
         use: {
@@ -66,8 +66,13 @@ exports.loadFiles = ({ include, exclude, options } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.(eot|svg|webp|ttf|woff|woff2)$/,
-        use: 'file-loader'
+        test: /\.(eot|webp|ttf|woff|woff2)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'fonts/[name].[ext]'
+          }
+        }
       }
     ]
   }

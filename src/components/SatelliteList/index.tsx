@@ -1,11 +1,12 @@
 import React from 'react';
 import { ISatellite } from '../../types/Satellite';
-import { randomSatellites } from '../../utils/randomSatellites';
 import Satellite from '../Satellite';
 
-const SatelliteList = () => {
-  const satellites: ISatellite[] = randomSatellites(2);
+interface IProps {
+  satellites: ISatellite[];
+}
 
+const SatelliteList: React.FC<IProps> = ({ satellites }) => {
   return (
     <div className="grid">
       {satellites.map((satellite: ISatellite) => (
