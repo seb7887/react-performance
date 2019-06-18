@@ -1,4 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PurifyCssPlugin = require('purifycss-webpack');
 
 exports.clean = () => ({
   plugins: [new CleanWebpackPlugin()]
@@ -25,17 +27,36 @@ exports.loadSass = ({ include }) => ({
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-          'resolve-url-loader'
-        ],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
         include
       }
     ]
   }
 });
+
+exports.purifyCss = ({ paths }) => ({
+  plugins: [new PurifyCssPlugin({ paths })]
+});
+
+exports.extractCss = ({ include, exclude, use = [] }) => {
+  const plugin = new MiniCssExtractPlugin({
+    filename: '[name].css'
+  });
+
+  return {
+    module: {
+      rules: [
+        {
+          test: /\.scss$/,
+          include,
+          exclude,
+          use: [MiniCssExtractPlugin.loader].concat(use)
+        }
+      ]
+    },
+    plugins: [plugin]
+  };
+};
 
 exports.devServer = ({ host, port } = {}) => ({
   devServer: {
