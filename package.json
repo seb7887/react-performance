@@ -11,7 +11,7 @@
     ]
   },
   "scripts": {
-    "build": "webpack --env.mode production",
+    "build": "webpack --env.mode production -p",
     "dev": "webpack-dev-server --env.mode development",
     "prestart": "npm run build",
     "start": "serve -s dist"
