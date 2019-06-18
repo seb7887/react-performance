@@ -4,7 +4,7 @@
   background-size: cover;
   background-position-y: center;
   background-position-x: right;
-  background-image: url("../images/cloud.svg");
+  background-image: url('../images/cloud.svg');
   background-attachment: fixed;
   width: 100%;
   display: flex;
@@ -14,9 +14,10 @@
 
   &__title {
     z-index: 2;
-    color: $violet;
+    color: $dark-purple;
     padding: 0 3rem;
-    font-size: 3rem;
+    font-size: 5rem;
+    font-family: 'SpaceRanger', sans-serif;
     text-transform: uppercase;
   }
 

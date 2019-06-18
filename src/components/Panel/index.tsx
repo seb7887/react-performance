@@ -8,7 +8,7 @@ interface IProps {
 const Panel: React.FC<IProps> = ({ quantity }) => (
   <div className="panel">
     <img className="panel__img" src={sat} alt="satellite" />
-    <p className="panel__p">Scanning satellites ({quantity})</p>
+    <p className="panel__p">Scanning active satellites ({quantity})</p>
   </div>
 );
 

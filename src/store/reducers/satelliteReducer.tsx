@@ -21,7 +21,7 @@ export const satelliteReducer = (
     switch (action.type) {
       case getType(actions.upsertSatellite): {
         const satellite = action.payload.satellite;
-        draft.satellites = { ...state.satellites, [satellite.id]: satellite };
+        draft.satellites = satellite;
         break;
       }
       default:
