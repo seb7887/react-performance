@@ -35,7 +35,12 @@ exports.loadSass = ({ include }) => ({
 });
 
 exports.purifyCss = ({ paths }) => ({
-  plugins: [new PurifyCssPlugin({ paths })]
+  plugins: [
+    new PurifyCssPlugin({
+      paths,
+      minimize: true
+    })
+  ]
 });
 
 exports.extractCss = ({ include, exclude, use = [] }) => {
@@ -57,6 +62,13 @@ exports.extractCss = ({ include, exclude, use = [] }) => {
     plugins: [plugin]
   };
 };
+
+exports.autoprefix = () => ({
+  loader: 'postcss-loader',
+  options: {
+    plugins: () => [require('autoprefixer')()]
+  }
+});
 
 exports.devServer = ({ host, port } = {}) => ({
   devServer: {
