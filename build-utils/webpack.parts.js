@@ -1,10 +1,21 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PurifyCssPlugin = require('purifycss-webpack');
+const webpack = require('webpack');
 
 exports.clean = () => ({
   plugins: [new CleanWebpackPlugin()]
 });
+
+exports.environment = ({ env }) => {
+  const plugin = new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify(env)
+  });
+
+  return {
+    plugins: [plugin]
+  };
+};
 
 exports.loadTypescript = ({ include, exclude } = {}) => ({
   module: {
@@ -83,13 +94,34 @@ exports.loadImages = ({ include, exclude, options } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.(png|gif|jpe?g|svg)$/,
+        test: /\.(png|gif|jpe?g)$/,
         include,
         exclude,
         use: {
           loader: 'url-loader',
           options
         }
+      }
+    ]
+  }
+});
+
+exports.loadSvg = ({ include, exclude, options } = {}) => ({
+  module: {
+    rules: [
+      {
+        test: /\.svg$/,
+        include,
+        exclude,
+        use: [
+          {
+            loader: 'file-loader',
+            options
+          },
+          {
+            loader: 'image-webpack-loader'
+          }
+        ]
       }
     ]
   }

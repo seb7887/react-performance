@@ -7,3 +7,7 @@ In this article, we'll cover some many easy webpack optimizations that will serv
 - extract css
 - purify css
 - autoprefixer
+
+## Assets
+
+- image-webpack-loader -> compression
