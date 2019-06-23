@@ -8,5 +8,6 @@ module.exports = merge([
     port: 3000
   }),
   parts.loadSass({ include: PATHS.styles }),
-  parts.loadImages()
+  parts.loadImages(),
+  parts.loadSvg()
 ]);
