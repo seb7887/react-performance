@@ -14,7 +14,12 @@ module.exports = merge([
             chunks: 'all'
           }
         }
-      }
+      },
+      runtimeChunk: {
+        name: 'manifest'
+      },
+      usedExports: true,
+      sideEffects: true
     }
   },
   parts.clean(),
@@ -50,6 +55,8 @@ module.exports = merge([
     }
   }),
   parts.moduleConcatenation(),
-  parts.bundleAnalyzer()
-  //parts.compress()
+  parts.inlineManifest({ name: 'manifest' }),
+  parts.bundleAnalyzer(),
+  parts.compress(),
+  parts.pwa()
 ]);

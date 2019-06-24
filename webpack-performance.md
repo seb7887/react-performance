@@ -19,3 +19,5 @@ In this article, we'll cover some many easy webpack optimizations that will serv
 - minify css
 - compression
 - hash
+- manifest
+- pwa

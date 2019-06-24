@@ -4,7 +4,9 @@ const PurifyCssPlugin = require('purifycss-webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const cssnano = require('cssnano');
+const InlineManifestWebpackPlugin = require('inline-manifest-webpack-plugin');
 const BrotliPlugin = require('brotli-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 const webpack = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
@@ -169,6 +171,10 @@ exports.minifyCss = ({ options }) => ({
   ]
 });
 
+exports.inlineManifest = ({ name }) => ({
+  plugins: [new InlineManifestWebpackPlugin(name)]
+});
+
 exports.generateSourceMaps = ({ type }) => ({
   devtool: type
 });
@@ -190,6 +196,15 @@ exports.bundleAnalyzer = () => ({
       analyzerMode: 'disabled',
       generateStatsFile: true,
       statsOptions: { source: false }
+    })
+  ]
+});
+
+exports.pwa = () => ({
+  plugins: [
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true
     })
   ]
 });

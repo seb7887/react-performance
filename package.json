@@ -15,7 +15,9 @@
     "dev": "webpack-dev-server --env.mode development",
     "prestart": "npm run build",
     "start": "serve -s dist",
-    "bundle:report": "webpack-bundle-analyzer --port 4200 dist/stats.json"
+    "bundle:report": "webpack-bundle-analyzer --port 4200 dist/stats.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "husky": {
     "hooks": {
@@ -31,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/seb7887/react-performance/issues"
   },
-  "homepage": "https://github.com/seb7887/react-performance#readme",
+  "homepage": "https://seb7887.github.io/ad-astra",
   "devDependencies": {
     "autoprefixer": "^9.6.0",
     "brotli-webpack-plugin": "^1.1.0",
@@ -42,9 +44,11 @@
     "cssnano": "^4.1.10",
     "fast-sass-loader": "^1.5.0",
     "file-loader": "^4.0.0",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^2.4.1",
     "image-webpack-loader": "^5.0.0",
+    "inline-manifest-webpack-plugin": "^4.0.2",
     "lint-staged": "^8.2.1",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
@@ -69,7 +73,8 @@
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.4",
     "webpack-dev-server": "^3.7.1",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^4.2.1",
+    "workbox-webpack-plugin": "^4.3.1"
   },
   "dependencies": {
     "@types/chance": "^1.0.4",
