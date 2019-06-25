@@ -2,20 +2,17 @@
   "errors": [
   ],
   "warnings": [
-    "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  cloud.fbcf.svg (1.79 MiB)\n  vendor.2466.js (375 KiB)\n  cloud.fbcf.svg.br (696 KiB)",
-    "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (403 KiB)\n      manifest.1bfb.bundle.js\n      vendor.2466.js\n      main.89b2.css\n      main.d706.js\n",
-    "webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/"
   ],
   "version": "4.34.0",
-  "hash": "223c571d7f9626e87dd9",
-  "time": 15833,
-  "builtAt": 1561434790922,
+  "hash": "f110d5cbf9cdcc4a0e14",
+  "time": 16616,
+  "builtAt": 1561487915472,
   "publicPath": "",
   "outputPath": "/home/seb/Github/react-performance/dist",
   "assetsByChunkName": {
     "main": [
-      "main.89b2.css",
-      "main.d706.js"
+      "main.f1ca.css",
+      "main.4828.js"
     ],
     "vendor": "vendor.2466.js"
   },
@@ -27,8 +24,7 @@
       ],
       "chunkNames": [
       ],
-      "emitted": true,
-      "isOverSizeLimit": true
+      "emitted": true
     },
     {
       "name": "cloud.fbcf.svg.br",
@@ -37,8 +33,7 @@
       ],
       "chunkNames": [
       ],
-      "emitted": true,
-      "isOverSizeLimit": true
+      "emitted": true
     },
     {
       "name": "favicon.ico",
@@ -50,7 +45,7 @@
       "emitted": true
     },
     {
-      "name": "fonts/Inter-SemiBold.woff2",
+      "name": "fonts/Inter-SemiBold.c37b.woff2",
       "size": 94468,
       "chunks": [
       ],
@@ -59,7 +54,7 @@
       "emitted": true
     },
     {
-      "name": "fonts/spacerangertitle.ttf",
+      "name": "fonts/spacerangertitle.a35c.ttf",
       "size": 28496,
       "chunks": [
       ],
@@ -77,18 +72,7 @@
       "emitted": true
     },
     {
-      "name": "main.89b2.css",
-      "size": 2680,
-      "chunks": [
-        0
-      ],
-      "chunkNames": [
-        "main"
-      ],
-      "emitted": true
-    },
-    {
-      "name": "main.d706.js",
+      "name": "main.4828.js",
       "size": 26323,
       "chunks": [
         0
@@ -99,7 +83,7 @@
       "emitted": true
     },
     {
-      "name": "main.d706.js.br",
+      "name": "main.4828.js.br",
       "size": 18000,
       "chunks": [
       ],
@@ -108,8 +92,19 @@
       "emitted": true
     },
     {
-      "name": "precache-manifest.93613258167b0fd0e1a60e139cc05216.js",
-      "size": 1033,
+      "name": "main.f1ca.css",
+      "size": 2690,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "precache-manifest.07d7770ec96ff6d2d4b2783963b43488.js",
+      "size": 1043,
       "chunks": [
       ],
       "chunkNames": [
@@ -134,8 +129,7 @@
       "chunkNames": [
         "vendor"
       ],
-      "emitted": true,
-      "isOverSizeLimit": true
+      "emitted": true
     },
     {
       "name": "vendor.2466.js.br",
@@ -158,14 +152,13 @@
       "assets": [
         "manifest.1bfb.bundle.js",
         "vendor.2466.js",
-        "main.89b2.css",
-        "main.d706.js"
+        "main.f1ca.css",
+        "main.4828.js"
       ],
       "children": {
       },
       "childAssets": {
-      },
-      "isOverSizeLimit": true
+      }
     }
   },
   "namedChunkGroups": {
@@ -178,14 +171,13 @@
       "assets": [
         "manifest.1bfb.bundle.js",
         "vendor.2466.js",
-        "main.89b2.css",
-        "main.d706.js"
+        "main.f1ca.css",
+        "main.4828.js"
       ],
       "children": {
       },
       "childAssets": {
-      },
-      "isOverSizeLimit": true
+      }
     }
   },
   "chunks": [
@@ -194,15 +186,15 @@
       "rendered": true,
       "initial": true,
       "entry": false,
-      "size": 34186,
+      "size": 34196,
       "names": [
         "main"
       ],
       "files": [
-        "main.89b2.css",
-        "main.d706.js"
+        "main.f1ca.css",
+        "main.4828.js"
       ],
-      "hash": "d706d036348d5df0fac0",
+      "hash": "48289f8524a6acb971c6",
       "siblings": [
         1,
         2
@@ -444,8 +436,8 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "fonts/spacerangertitle.ttf",
-            "fonts/Inter-SemiBold.woff2",
+            "fonts/spacerangertitle.a35c.ttf",
+            "fonts/Inter-SemiBold.c37b.woff2",
             "cloud.fbcf.svg"
           ],
           "reasons": [
@@ -1700,7 +1692,7 @@
           "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
           "index": 31,
           "index2": 28,
-          "size": 3700,
+          "size": 3710,
           "built": false,
           "optional": false,
           "prefetched": false,
@@ -2047,34 +2039,7 @@
               "moduleName": "./src/index.tsx + 15 modules",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "1:0-26"
-            },
-            {
-              "moduleId": 27,
-              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
-              "module": "./src/index.tsx + 15 modules",
-              "moduleName": "./src/index.tsx + 15 modules",
-              "type": "harmony side effect evaluation",
-              "userRequest": "react",
-              "loc": "1:0-26"
-            },
-            {
-              "moduleId": 27,
-              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
-              "module": "./src/index.tsx + 15 modules",
-              "moduleName": "./src/index.tsx + 15 modules",
-              "type": "harmony side effect evaluation",
-              "userRequest": "react",
-              "loc": "1:0-26"
-            },
-            {
-              "moduleId": 27,
-              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
-              "module": "./src/index.tsx + 15 modules",
-              "moduleName": "./src/index.tsx + 15 modules",
-              "type": "harmony side effect evaluation",
-              "userRequest": "react",
-              "loc": "1:0-26"
+              "loc": "1:0-51"
             },
             {
               "moduleId": 27,
@@ -2119,7 +2084,34 @@
               "moduleName": "./src/index.tsx + 15 modules",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "1:0-51"
+              "loc": "1:0-26"
+            },
+            {
+              "moduleId": 27,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
+              "module": "./src/index.tsx + 15 modules",
+              "moduleName": "./src/index.tsx + 15 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "react",
+              "loc": "1:0-26"
+            },
+            {
+              "moduleId": 27,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
+              "module": "./src/index.tsx + 15 modules",
+              "moduleName": "./src/index.tsx + 15 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "react",
+              "loc": "1:0-26"
+            },
+            {
+              "moduleId": 27,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
+              "module": "./src/index.tsx + 15 modules",
+              "moduleName": "./src/index.tsx + 15 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "react",
+              "loc": "1:0-26"
             },
             {
               "moduleId": 27,
@@ -21445,43 +21437,7 @@
           "moduleName": "./src/index.tsx + 15 modules",
           "type": "harmony side effect evaluation",
           "userRequest": "react",
-          "loc": "1:0-26"
-        },
-        {
-          "moduleId": 27,
-          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
-          "module": "./src/index.tsx + 15 modules",
-          "moduleName": "./src/index.tsx + 15 modules",
-          "type": "harmony side effect evaluation",
-          "userRequest": "react",
-          "loc": "1:0-26"
-        },
-        {
-          "moduleId": 27,
-          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
-          "module": "./src/index.tsx + 15 modules",
-          "moduleName": "./src/index.tsx + 15 modules",
-          "type": "harmony side effect evaluation",
-          "userRequest": "react",
-          "loc": "1:0-26"
-        },
-        {
-          "moduleId": 27,
-          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
-          "module": "./src/index.tsx + 15 modules",
-          "moduleName": "./src/index.tsx + 15 modules",
-          "type": "harmony side effect evaluation",
-          "userRequest": "react",
-          "loc": "1:0-26"
-        },
-        {
-          "moduleId": 27,
-          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
-          "module": "./src/index.tsx + 15 modules",
-          "moduleName": "./src/index.tsx + 15 modules",
-          "type": "harmony side effect evaluation",
-          "userRequest": "react",
-          "loc": "1:0-26"
+          "loc": "1:0-41"
         },
         {
           "moduleId": 27,
@@ -21517,7 +21473,43 @@
           "moduleName": "./src/index.tsx + 15 modules",
           "type": "harmony side effect evaluation",
           "userRequest": "react",
-          "loc": "1:0-41"
+          "loc": "1:0-26"
+        },
+        {
+          "moduleId": 27,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
+          "module": "./src/index.tsx + 15 modules",
+          "moduleName": "./src/index.tsx + 15 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "react",
+          "loc": "1:0-26"
+        },
+        {
+          "moduleId": 27,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
+          "module": "./src/index.tsx + 15 modules",
+          "moduleName": "./src/index.tsx + 15 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "react",
+          "loc": "1:0-26"
+        },
+        {
+          "moduleId": 27,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
+          "module": "./src/index.tsx + 15 modules",
+          "moduleName": "./src/index.tsx + 15 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "react",
+          "loc": "1:0-26"
+        },
+        {
+          "moduleId": 27,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx 7508bb754e3761de76404d055f74d8b7",
+          "module": "./src/index.tsx + 15 modules",
+          "moduleName": "./src/index.tsx + 15 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "react",
+          "loc": "1:0-26"
         },
         {
           "moduleId": 27,
@@ -40835,8 +40827,8 @@
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "fonts/spacerangertitle.ttf",
-        "fonts/Inter-SemiBold.woff2",
+        "fonts/spacerangertitle.a35c.ttf",
+        "fonts/Inter-SemiBold.c37b.woff2",
         "cloud.fbcf.svg"
       ],
       "reasons": [
@@ -42091,7 +42083,7 @@
       "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
       "index": 31,
       "index2": 28,
-      "size": 3700,
+      "size": 3710,
       "built": false,
       "optional": false,
       "prefetched": false,
@@ -42672,14 +42664,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 7746,
+          "size": 7756,
           "names": [
             "mini-css-extract-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "a02618b175e280d00a3a",
+          "hash": "14bcb5ca71ca74bbfb88",
           "siblings": [
           ],
           "parents": [
@@ -42833,7 +42825,7 @@
               "name": "./src/fonts/spacerangertitle.ttf",
               "index": 3,
               "index2": 2,
-              "size": 72,
+              "size": 77,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -42881,7 +42873,7 @@
               "name": "./src/fonts/Inter-SemiBold.woff2",
               "index": 4,
               "index2": 3,
-              "size": 72,
+              "size": 77,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -43131,7 +43123,7 @@
           "name": "./src/fonts/spacerangertitle.ttf",
           "index": 3,
           "index2": 2,
-          "size": 72,
+          "size": 77,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -43179,7 +43171,7 @@
           "name": "./src/fonts/Inter-SemiBold.woff2",
           "index": 4,
           "index2": 3,
-          "size": 72,
+          "size": 77,
           "cacheable": true,
           "built": true,
           "optional": false,

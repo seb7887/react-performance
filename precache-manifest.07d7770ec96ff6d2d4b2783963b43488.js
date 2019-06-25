@@ -13,27 +13,27 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "c37be6e8bf10c06e2c46b8150c6141de",
-    "url": "fonts/Inter-SemiBold.woff2"
+    "url": "fonts/Inter-SemiBold.c37b.woff2"
   },
   {
     "revision": "a35c949732d82304f366d5ccc165a375",
-    "url": "fonts/spacerangertitle.ttf"
+    "url": "fonts/spacerangertitle.a35c.ttf"
   },
   {
-    "revision": "9390ac378d698288f1f956494706aa53",
+    "revision": "fadbec930cafe9de33a6e17549ddbbf8",
     "url": "index.html"
   },
   {
-    "revision": "d706d036348d5df0fac0",
-    "url": "main.89b2.css"
-  },
-  {
-    "revision": "d706d036348d5df0fac0",
-    "url": "main.d706.js"
+    "revision": "48289f8524a6acb971c6",
+    "url": "main.4828.js"
   },
   {
     "revision": "25c5b6e1c0236ac8c234dab94623434e",
-    "url": "main.d706.js.br"
+    "url": "main.4828.js.br"
+  },
+  {
+    "revision": "48289f8524a6acb971c6",
+    "url": "main.f1ca.css"
   },
   {
     "revision": "24668edd8f1f9619e48e",
