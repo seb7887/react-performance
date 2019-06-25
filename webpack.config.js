@@ -17,7 +17,8 @@ module.exports = ({ mode }) => {
       entry: ['./src/index.tsx'],
       output: {
         path: PATHS.output,
-        filename: '[name].bundle.js'
+        chunkFilename: '[name].[chunkhash:4].js',
+        filename: '[name].[chunkhash:4].bundle.js'
       },
       plugins: [
         new HtmlWebpackPlugin({

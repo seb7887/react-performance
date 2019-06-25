@@ -11,3 +11,13 @@ In this article, we'll cover some many easy webpack optimizations that will serv
 ## Assets
 
 - image-webpack-loader -> compression
+
+### Javascript + Typescript
+
+- bundle splitting
+- minify js
+- minify css
+- compression
+- hash
+- manifest
+- pwa

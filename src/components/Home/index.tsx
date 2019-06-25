@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Banner from '../Banner';
 import Spinner from '../Spinner';
-import Panel from '../Panel';
-import SatelliteList from '../SatelliteList';
+import Content from '../Content';
 import { ISatellite } from '../../types/Satellite';
 
 interface IProps {
@@ -19,14 +18,7 @@ const Home: React.FC<IProps> = ({ satellites }) => {
   return (
     <>
       <Banner>Ad Astra</Banner>
-      {!ready ? (
-        <Spinner />
-      ) : (
-        <div className="content">
-          <Panel quantity={satellites.length} />
-          <SatelliteList satellites={satellites} />
-        </div>
-      )}
+      {!ready ? <Spinner /> : <Content satellites={satellites} />}
     </>
   );
 };
