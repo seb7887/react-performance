@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { unstable_Profiler as Profiler } from 'react';
 import ReactDOM from 'react-dom';
 import { StoreContext } from 'redux-react-hook';
 import { configureStore } from './store';
+import { logProfiler } from './utils/logProfiler';
 import './styles/main.scss';
 import App from './App';
 
@@ -22,7 +23,9 @@ if ('serviceWorker' in navigator) {
 
 ReactDOM.render(
   <StoreContext.Provider value={store}>
-    <App />
+    <Profiler id="App" onRender={logProfiler}>
+      <App />
+    </Profiler>
   </StoreContext.Provider>,
   document.getElementById('root')
 );
