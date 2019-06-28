@@ -35,6 +35,7 @@
   },
   "homepage": "https://seb7887.github.io/ad-astra",
   "devDependencies": {
+    "@welldone-software/why-did-you-render": "^3.2.1",
     "autoprefixer": "^9.6.0",
     "brotli-webpack-plugin": "^1.1.0",
     "clean-webpack-plugin": "^3.0.0",
