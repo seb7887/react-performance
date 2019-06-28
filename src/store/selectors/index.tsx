@@ -1,1 +1,1 @@
-export { getSatellites } from './getSatellites';
+export { getActiveSatellites } from './getActiveSatellites';
