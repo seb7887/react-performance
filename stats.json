@@ -4,16 +4,16 @@
   "warnings": [
   ],
   "version": "4.34.0",
-  "hash": "20a0d8cd300566f9b5ce",
-  "time": 49035,
-  "builtAt": 1561770242846,
+  "hash": "8692e0d049c42045e43e",
+  "time": 51668,
+  "builtAt": 1561770497860,
   "publicPath": "",
   "outputPath": "/home/seb/Github/react-performance/dist",
   "assetsByChunkName": {
     "Satellites": "Satellites.c434.js",
     "main": [
-      "main.ed58.css",
-      "main.294f.js"
+      "main.22f0.css",
+      "main.a2a7.js"
     ],
     "vendor": "vendor.0df8.js"
   },
@@ -84,7 +84,18 @@
       "emitted": true
     },
     {
-      "name": "main.294f.js",
+      "name": "main.22f0.css",
+      "size": 2500,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "main.a2a7.js",
       "size": 16690,
       "chunks": [
         1
@@ -95,7 +106,7 @@
       "emitted": true
     },
     {
-      "name": "main.294f.js.br",
+      "name": "main.a2a7.js.br",
       "size": 11285,
       "chunks": [
       ],
@@ -104,18 +115,7 @@
       "emitted": true
     },
     {
-      "name": "main.ed58.css",
-      "size": 2536,
-      "chunks": [
-        1
-      ],
-      "chunkNames": [
-        "main"
-      ],
-      "emitted": true
-    },
-    {
-      "name": "precache-manifest.e29ca409a8b78a929ed4b68149ef4727.js",
+      "name": "precache-manifest.fd67e16cff4e9061f2e9a12deedf56f9.js",
       "size": 1124,
       "chunks": [
       ],
@@ -164,8 +164,8 @@
       "assets": [
         "manifest.4f9e.bundle.js",
         "vendor.0df8.js",
-        "main.ed58.css",
-        "main.294f.js"
+        "main.22f0.css",
+        "main.a2a7.js"
       ],
       "children": {
       },
@@ -183,8 +183,8 @@
       "assets": [
         "manifest.4f9e.bundle.js",
         "vendor.0df8.js",
-        "main.ed58.css",
-        "main.294f.js"
+        "main.22f0.css",
+        "main.a2a7.js"
       ],
       "children": {
       },
@@ -688,15 +688,15 @@
       "rendered": true,
       "initial": true,
       "entry": false,
-      "size": 23936,
+      "size": 23892,
       "names": [
         "main"
       ],
       "files": [
-        "main.ed58.css",
-        "main.294f.js"
+        "main.22f0.css",
+        "main.a2a7.js"
       ],
-      "hash": "294f8608b5fcd73a8337",
+      "hash": "a2a76c7d7c5a58ea78a9",
       "siblings": [
         2,
         3
@@ -1868,7 +1868,7 @@
           "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
           "index": 32,
           "index2": 29,
-          "size": 3497,
+          "size": 3453,
           "built": false,
           "optional": false,
           "prefetched": false,
@@ -42644,7 +42644,7 @@
       "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
       "index": 32,
       "index2": 29,
-      "size": 3497,
+      "size": 3453,
       "built": false,
       "optional": false,
       "prefetched": false,
@@ -43225,14 +43225,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 7539,
+          "size": 7493,
           "names": [
             "mini-css-extract-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "bf00a2ca311daf3eedba",
+          "hash": "d840376aca26a50d530b",
           "siblings": [
           ],
           "parents": [
@@ -43248,7 +43248,7 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
               "index": 0,
               "index2": 5,
-              "size": 4137,
+              "size": 4091,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -43546,7 +43546,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
           "index": 0,
           "index2": 5,
-          "size": 4137,
+          "size": 4091,
           "cacheable": true,
           "built": true,
           "optional": false,
