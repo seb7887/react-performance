@@ -4,16 +4,16 @@
   "warnings": [
   ],
   "version": "4.34.0",
-  "hash": "b4a54ced1fdaf7df5d3b",
-  "time": 44762,
-  "builtAt": 1561769640650,
+  "hash": "20a0d8cd300566f9b5ce",
+  "time": 49035,
+  "builtAt": 1561770242846,
   "publicPath": "",
   "outputPath": "/home/seb/Github/react-performance/dist",
   "assetsByChunkName": {
     "Satellites": "Satellites.c434.js",
     "main": [
-      "main.b254.css",
-      "main.6c9d.js"
+      "main.ed58.css",
+      "main.294f.js"
     ],
     "vendor": "vendor.0df8.js"
   },
@@ -84,7 +84,7 @@
       "emitted": true
     },
     {
-      "name": "main.6c9d.js",
+      "name": "main.294f.js",
       "size": 16690,
       "chunks": [
         1
@@ -95,7 +95,7 @@
       "emitted": true
     },
     {
-      "name": "main.6c9d.js.br",
+      "name": "main.294f.js.br",
       "size": 11285,
       "chunks": [
       ],
@@ -104,8 +104,8 @@
       "emitted": true
     },
     {
-      "name": "main.b254.css",
-      "size": 2544,
+      "name": "main.ed58.css",
+      "size": 2536,
       "chunks": [
         1
       ],
@@ -115,7 +115,7 @@
       "emitted": true
     },
     {
-      "name": "precache-manifest.d51c60eb4b9fb372e07ba21e7a6a4e34.js",
+      "name": "precache-manifest.e29ca409a8b78a929ed4b68149ef4727.js",
       "size": 1124,
       "chunks": [
       ],
@@ -164,8 +164,8 @@
       "assets": [
         "manifest.4f9e.bundle.js",
         "vendor.0df8.js",
-        "main.b254.css",
-        "main.6c9d.js"
+        "main.ed58.css",
+        "main.294f.js"
       ],
       "children": {
       },
@@ -183,8 +183,8 @@
       "assets": [
         "manifest.4f9e.bundle.js",
         "vendor.0df8.js",
-        "main.b254.css",
-        "main.6c9d.js"
+        "main.ed58.css",
+        "main.294f.js"
       ],
       "children": {
       },
@@ -688,15 +688,15 @@
       "rendered": true,
       "initial": true,
       "entry": false,
-      "size": 23944,
+      "size": 23936,
       "names": [
         "main"
       ],
       "files": [
-        "main.b254.css",
-        "main.6c9d.js"
+        "main.ed58.css",
+        "main.294f.js"
       ],
-      "hash": "6c9da70b5cbbd4f049f0",
+      "hash": "294f8608b5fcd73a8337",
       "siblings": [
         2,
         3
@@ -1868,7 +1868,7 @@
           "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
           "index": 32,
           "index2": 29,
-          "size": 3505,
+          "size": 3497,
           "built": false,
           "optional": false,
           "prefetched": false,
@@ -42644,7 +42644,7 @@
       "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
       "index": 32,
       "index2": 29,
-      "size": 3505,
+      "size": 3497,
       "built": false,
       "optional": false,
       "prefetched": false,
@@ -43225,14 +43225,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 7547,
+          "size": 7539,
           "names": [
             "mini-css-extract-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "f6b7d8d5f83c20cc035f",
+          "hash": "bf00a2ca311daf3eedba",
           "siblings": [
           ],
           "parents": [
@@ -43248,7 +43248,7 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
               "index": 0,
               "index2": 5,
-              "size": 4145,
+              "size": 4137,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -43546,7 +43546,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
           "index": 0,
           "index2": 5,
-          "size": 4145,
+          "size": 4137,
           "cacheable": true,
           "built": true,
           "optional": false,
