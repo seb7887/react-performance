@@ -4,16 +4,16 @@
   "warnings": [
   ],
   "version": "4.34.0",
-  "hash": "b5da8b34f0609bfe547f",
-  "time": 43159,
-  "builtAt": 1561769021473,
+  "hash": "b4a54ced1fdaf7df5d3b",
+  "time": 44762,
+  "builtAt": 1561769640650,
   "publicPath": "",
   "outputPath": "/home/seb/Github/react-performance/dist",
   "assetsByChunkName": {
     "Satellites": "Satellites.c434.js",
     "main": [
-      "main.22f0.css",
-      "main.a2a7.js"
+      "main.b254.css",
+      "main.6c9d.js"
     ],
     "vendor": "vendor.0df8.js"
   },
@@ -76,7 +76,7 @@
     },
     {
       "name": "index.html",
-      "size": 2735,
+      "size": 2794,
       "chunks": [
       ],
       "chunkNames": [
@@ -84,18 +84,7 @@
       "emitted": true
     },
     {
-      "name": "main.22f0.css",
-      "size": 2500,
-      "chunks": [
-        1
-      ],
-      "chunkNames": [
-        "main"
-      ],
-      "emitted": true
-    },
-    {
-      "name": "main.a2a7.js",
+      "name": "main.6c9d.js",
       "size": 16690,
       "chunks": [
         1
@@ -106,7 +95,7 @@
       "emitted": true
     },
     {
-      "name": "main.a2a7.js.br",
+      "name": "main.6c9d.js.br",
       "size": 11285,
       "chunks": [
       ],
@@ -115,7 +104,18 @@
       "emitted": true
     },
     {
-      "name": "precache-manifest.f5eb5a26120abfc55a49730b751fcaa5.js",
+      "name": "main.b254.css",
+      "size": 2544,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "precache-manifest.d51c60eb4b9fb372e07ba21e7a6a4e34.js",
       "size": 1124,
       "chunks": [
       ],
@@ -164,8 +164,8 @@
       "assets": [
         "manifest.4f9e.bundle.js",
         "vendor.0df8.js",
-        "main.22f0.css",
-        "main.a2a7.js"
+        "main.b254.css",
+        "main.6c9d.js"
       ],
       "children": {
       },
@@ -183,8 +183,8 @@
       "assets": [
         "manifest.4f9e.bundle.js",
         "vendor.0df8.js",
-        "main.22f0.css",
-        "main.a2a7.js"
+        "main.b254.css",
+        "main.6c9d.js"
       ],
       "children": {
       },
@@ -688,15 +688,15 @@
       "rendered": true,
       "initial": true,
       "entry": false,
-      "size": 23892,
+      "size": 23944,
       "names": [
         "main"
       ],
       "files": [
-        "main.22f0.css",
-        "main.a2a7.js"
+        "main.b254.css",
+        "main.6c9d.js"
       ],
-      "hash": "a2a76c7d7c5a58ea78a9",
+      "hash": "6c9da70b5cbbd4f049f0",
       "siblings": [
         2,
         3
@@ -1868,7 +1868,7 @@
           "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
           "index": 32,
           "index2": 29,
-          "size": 3453,
+          "size": 3505,
           "built": false,
           "optional": false,
           "prefetched": false,
@@ -42644,7 +42644,7 @@
       "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
       "index": 32,
       "index2": 29,
-      "size": 3453,
+      "size": 3505,
       "built": false,
       "optional": false,
       "prefetched": false,
@@ -42707,7 +42707,7 @@
       "assets": [
         {
           "name": "index.html",
-          "size": 545271,
+          "size": 545331,
           "chunks": [
             0
           ],
@@ -42751,13 +42751,13 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 541321,
+          "size": 541381,
           "names": [
           ],
           "files": [
             "index.html"
           ],
-          "hash": "aeb22420f3fc2f2f790c",
+          "hash": "da9afb87a8ffeae6a79c",
           "siblings": [
           ],
           "parents": [
@@ -42773,7 +42773,7 @@
               "name": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
               "index": 0,
               "index2": 3,
-              "size": 497,
+              "size": 557,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -42984,7 +42984,7 @@
           "name": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
           "index": 0,
           "index2": 3,
-          "size": 497,
+          "size": 557,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -43225,14 +43225,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 7493,
+          "size": 7547,
           "names": [
             "mini-css-extract-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "d840376aca26a50d530b",
+          "hash": "f6b7d8d5f83c20cc035f",
           "siblings": [
           ],
           "parents": [
@@ -43248,7 +43248,7 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
               "index": 0,
               "index2": 5,
-              "size": 4091,
+              "size": 4145,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -43546,7 +43546,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/fast-sass-loader/lib!./src/styles/main.scss",
           "index": 0,
           "index2": 5,
-          "size": 4091,
+          "size": 4145,
           "cacheable": true,
           "built": true,
           "optional": false,
