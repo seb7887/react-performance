@@ -22,6 +22,7 @@
 - using webworkers for CPU extensive tasks -> sorting
 - virtualize long lists
 - consider server side rendering
+- font-display (mmm webpack)
 
 ## shouldComponentUpdate with React Hooks
 
