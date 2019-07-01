@@ -22,4 +22,4 @@ const Satellite: React.FC<IProps> = ({ satellite }) => (
   </div>
 );
 
-export default Satellite;
+export default React.memo(Satellite);
