@@ -18,6 +18,7 @@
 - [ ] virtualize long lists
 - [ ] consider server side rendering
 
+
 ## shouldComponentUpdate with React Hooks
 
 ```javascript
