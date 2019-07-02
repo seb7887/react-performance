@@ -1,4 +1,4 @@
-# How to improve performance part II: React
+# How to improve performance in web applications part II: React
 
 ![react](./docs/images/react.jpeg)
 

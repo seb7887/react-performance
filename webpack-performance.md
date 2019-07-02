@@ -1,10 +1,10 @@
-# How to Improve performance part I: Webpack
+# How to improve performance in web applications part I: Webpack
 
 ![webpack](./docs/images/webpack.png)
 
 ## Introduction
 
-In this article, we’ll cover some easy webpack techniques that will serve your app faster to users, no matter what you’re using. In [this](https://github.com/seb7887/react-performance) sample app, starting from no optimization, we were able to compress our entry JS and leverage intelligent caching for snappy refreshes.
+In this article, we’ll cover some easy Webpack techniques that will serve your app faster to users, no matter what you’re using. In [this](https://github.com/seb7887/react-performance) sample app, starting from no optimization, we were able to compress our entry JS and implement intelligent caching for faster refreshes.
 
 Our starting point is this:
 
@@ -14,11 +14,11 @@ Our starting point is this:
 
 ### Extracting CSS
 
-As per configuration, all css is inlined to JavaScript. Even though this can be convenient during development, it doesn't sound ideal.
+By default, all CSS is inlined to JavaScript. Even though this can be convenient during development, it doesn't sound ideal in production.
 
 Separating CSS to a file of its own avoids the problem by letting the browser to manage it separately.
 
-It can be possible to generate a separate CSS bundles using `mini-css-extract-plugin`. It can aggregate multiple CSS files into one. For this reason, it comes with a loader that handles the extraction process. The plugin then picks up the result aggregated by the loader and emits a separate file.
+It can be possible to generate a separate CSS bundle using `mini-css-extract-plugin`. It can aggregate multiple CSS files into one. For this reason, it comes with a loader that handles the extraction process. The plugin then picks up the result aggregated by the loader and emits a separate file.
 To set it up, you must install the plugin first:
 
 ```
@@ -62,7 +62,7 @@ module.exports = merge([
 ### Enabling PurifyCSS
 
 Typically, you bundle even the unused CSS. It's possible to eliminate all unused CSS.
-`PurifyCSS` is a tool that can achieve this by analyzing files. It walks through your code and figures out which CSS classes are being used. Often there is enough information for it to strip unused CSS from your project.
+`PurifyCSS` is a tool that can achieve this by analyzing files. It takes content and CSS and returns only the used CSS. PurifyCSS does not modify the original CSS files.
 
 `purifycss-webpack` allows to achieve similar results. You should use the `MiniCssExtractPlugin` with it for the best results. Install it and a glob helper first:
 
@@ -98,15 +98,15 @@ module.exports = merge([
 
 ### Autoprefixing
 
-It can be challenging to remember which vendor prefixes you have to use for specific CSS rules to support a large variety of users. Autoprefixing solves this problem. It can be enabled through `PostCSS` and the `autoprefixer` plugin. Autoprefixer uses Can I Use service to figure out which rules should be prefixed and its behavior can be tuned further.
+It can be challenging to remember which vendor prefixes you have to use for specific CSS rules to support a large variety of users. `Autoprefixer` solves this problem. It is a `PostCSS` plugin to parse CSS and add vendor prefixes to CSS rules using values from [Can I Use](https://caniuse.com/).
 
-Achieving autoprefixing takes a small addition to the current setup. Install postcss-loader and autoprefixer first:
+Achieving autoprefixing takes a small addition to the current setup. Install `postcss-loader` and `autoprefixer` first:
 
 ```
 npm i -D postcss-loader autoprefixer
 ```
 
-Add a fragment enabling autoprefixing:
+Add this to enabling autoprefixing:
 
 ```javascript
 const merge = require('webpack-merge');
@@ -134,7 +134,7 @@ Now our build looks like this:
 
 ### Optimizing images
 
-n case you want to compress your images, use `image-webpack-loader`. This type of loader should be applied first to the data, so remember to place it as the last within use listing.
+In case you want to compress your images, use `image-webpack-loader`. This type of loader should be applied first to the data, so remember to place it as the last within use listing.
 
 Compression is particularly valuable for production builds as it decreases the amount of bandwidth required to download your image assets and speed up your site or application as a result.
 
@@ -186,7 +186,7 @@ Let’s see how that affects our build:
 
 ### Bundle Splitting
 
-With bundle splitting, you can push the vendor dependencies to a bundle of their own and benefit from client level caching. The process can be done in such a way that the whole size of the application remains the same. Given there are more requests to perform, there's a slight overhead. But the benefit of caching makes up for this cost.
+With bundle splitting, you can push the vendor dependencies to a separate bundle and benefit from client level caching. The process can be done in such a way that the whole size of the application remains the same. Although there are more requests to perform, the benefit of caching makes up for this cost.
 
 ```javascript
 const merge = require('webpack-merge');
@@ -211,7 +211,7 @@ module.exports = merge([
 
 ### Minifying Javascript
 
-The point of minification is to convert the code into a smaller form. Safe transformations do this without losing any meaning by rewriting code. In webpack 4, minification process is controlled through two configuration fields: optimization.minimize flag to toggle it and optimization.minimizer array to configure the process.
+The goal of minification is to convert the code into a smaller form without losing any meaning by rewriting code. In Webpack 4, the minification process is controlled through two configuration fields: optimization.minimize flag to enable it and optimization.minimizer array to configure the process.
 
 To tune the defaults, we'll attach `terser-webpack-plugin` to the project so that it's possible to adjust it.
 
@@ -221,7 +221,7 @@ To get started, include the plugin to the project:
 npm i -D terser-webpack-plugin
 ```
 
-To attach it to the configuration, define a part for it first:
+Then attach it to the configuration:
 
 ```javascript
 const merge = require('webpack-merge');
@@ -241,7 +241,7 @@ module.exports = merge([
 
 ### Scope hoisting
 
-Since webpack 4, it applies scope hoisting in production mode by default. It hoists all modules to a single scope instead of writing a separate closure for each. Doing this slows down the build but gives you bundles that are faster to execute.
+Webpack 4 applies scope hoisting in production mode by default, hoisting all modules to a single scope instead of writing a separate closure for each. Doing this slows down the build but gives you bundles that are faster to execute.
 
 ```javascript
 const merge = require('webpack-merge');
@@ -259,15 +259,15 @@ module.exports = merge([
 
 ### Minifying CSS
 
-`optimize-css-assets-webpack-plugin` is a plugin based option that applies a chosen minifier on CSS assets. Using `MiniCssExtractPlugin` can lead to duplicated CSS given it only merges text chunks. OptimizeCSSAssetsPlugin avoids this problem by operating on the generated result and thus can lead to a better result.
+`optimize-css-assets-webpack-plugin` is a plugin bis a plugin that searches for CSS assets during the Webpack build and optimizes \ minimizes the CSS (by default it uses `cssnano` but a custom CSS processor can be specified). Using `MiniCssExtractPlugin` can lead to duplicated CSS given it only merges text chunks. `OptimizeCSSAssetsPlugin` avoids this problem by operating on the generated result and thus can lead to a better result.
 
-To attach it to the setup, install it and cssnano first:
+To attach it to the setup, install it and `cssnano` first:
 
 ```
 npm i -D optimize-css-assets-webpack-plugin cssnano
 ```
 
-Like for JavaScript, you can wrap the idea in a configuration part:
+And then:
 
 ```javascript
 const merge = require('webpack-merge');
@@ -300,7 +300,7 @@ module.exports = merge([
 
 ### Three Shaking
 
-We often use named imports on files that have a lot of other exports. It might create a case in which we don’t import all the things, but webpack would include a whole module anyway. This is where tree shaking comes in handy because it can help eliminate this dead code for us. Thanks to that, our bundle size can decrease greatly.
+We often use named imports on files that have a lot of other exports. It might create a case in which we don’t import all the things, but Webpack would include a whole module anyway. This is where tree shaking comes in handy because it can help eliminate this dead code for us. Thanks to that, our bundle size can decrease greatly.
 
 ```javascript
 const merge = require('webpack-merge');
@@ -327,7 +327,7 @@ module.exports = merge([
 
 ### Adding hashes to filenames
 
-Even though the generated build works the file names it uses is problematic, it doesn't allow to leverage client level cache efficiently as there's no way to tell whether or not a file has changed. Cache invalidation can be achieved by including a hash to the filenames.
+Although the generated build works the file names it uses is problematic, it doesn't allow to boost client level cache efficiently as there's no way to tell whether or not a file has changed. Cache invalidation can be achieved by including a hash to the filenames.
 
 Webpack provides placeholders for this purpose. These strings are used to attach specific information to webpack output. The most valuable ones are:
 
@@ -336,7 +336,7 @@ Webpack provides placeholders for this purpose. These strings are used to attach
 - `[name]` - Returns the file name.
 - `[ext]` - Returns the extension. `[ext]` works for most available fields. `MiniCssExtractPlugin` is a notable exception to this rule.
 - `[hash]` - Returns the build hash. If any portion of the build changes, this changes as well.
-- `[chunkhash]` - Returns an entry chunk-specific hash. Each entry defined in the configuration receives a hash of its own. If any portion of the entry changes, the hash will change as well. `[chunkhash]` is more granular than `[hash]` by definition.
+- `[chunkhash]` - Returns an entry chunk-specific hash. Each entry defined in the configuration receives a hash of its own. If any portion of the entry changes, the hash will change as well.
 - `[contenthash]` - Returns a hash generated based on content.
 
 It's preferable to use particularly hash and chunkhash only for production purposes as hashing doesn't do much good during development.
@@ -410,17 +410,17 @@ module.exports = merge([
 
 ### Extracting a Manifest
 
-When webpack writes bundles, it maintains a manifest as well. You can find it in the generated vendor bundle in this project. The manifest describes what files webpack should load. It's possible to extract it and start loading the files of the project faster instead of having to wait for the vendor bundle to be loaded.
+When Webpack writes bundles, it maintains a manifest as well. The manifest describes what files Webpack should load. It's possible to extract it and start loading the files of the project faster instead of having to wait for the vendor bundle to be loaded.
 
-If the hashes webpack generates change, then the manifest changes as well. As a result, the contents of the vendor bundle change, and become invalidated. The problem can be eliminated by extracting the manifest to a file of its own or by writing it inline to the html of the project.
+If the hashes Webpack generates change, then the manifest changes as well. As a result, the contents of the vendor bundle change, and become invalidated. The problem can be eliminated by extracting the manifest to a file of its own or by writing it inline to the HTML of the project.
 
-To extract the manifest, install this:
+To extract the manifest and inline it to the HTML, install this:
 
 ```
 npm i -D inline-manifest-webpack-plugin
 ```
 
-And add this to your configuration:
+And then add this to your configuration:
 
 ```javascript
 const merge = require('webpack-merge');
@@ -456,7 +456,7 @@ module.exports = merge([
 
 ## Conclusion
 
-Our final build now looks better:
+Our build now looks better:
 
 ![3-optimizations](./docs/images/3-optimizations.png)
 
