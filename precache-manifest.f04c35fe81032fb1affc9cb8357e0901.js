@@ -1,7 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a96c66439ab457bb9d2",
-    "url": "Satellites.6a96.js"
+    "revision": "64ee4746358a06e86c52d677cb1a7a66",
+    "url": "7df90058736b06c669ab.worker.js"
+  },
+  {
+    "revision": "1b009a1f61b8832398cb",
+    "url": "Satellites.1b00.js"
+  },
+  {
+    "revision": "4ea2687d09a5ba6ad9ecff4a16174128",
+    "url": "Satellites.1b00.js.br"
   },
   {
     "revision": "fbcffd70586cc9e26600609107ae8d04",
@@ -24,19 +32,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "fonts/spacerangertitle.a35c.ttf"
   },
   {
-    "revision": "01c544aec1d7a6f45cf031ce2165049a",
+    "revision": "bf4d4eb9242e393880ec38cc2fa19e26",
     "url": "index.html"
   },
   {
-    "revision": "199e78cb416911f2daac",
-    "url": "main.199e.js"
+    "revision": "50d8d865478a41664e65",
+    "url": "main.50d8.js"
   },
   {
-    "revision": "463852818ddc13af82ef10520455f17c",
-    "url": "main.199e.js.br"
+    "revision": "1472195466462845ea350b372e2d985d",
+    "url": "main.50d8.js.br"
   },
   {
-    "revision": "199e78cb416911f2daac",
+    "revision": "50d8d865478a41664e65",
     "url": "main.df54.css"
   },
   {

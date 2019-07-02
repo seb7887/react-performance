@@ -4,28 +4,46 @@
   "warnings": [
   ],
   "version": "4.34.0",
-  "hash": "020555c8342c3e60255e",
-  "time": 16923,
-  "builtAt": 1562003655304,
+  "hash": "5b5bc019b49e3f4a0162",
+  "time": 18198,
+  "builtAt": 1562072087288,
   "publicPath": "",
   "outputPath": "/home/seb/Github/react-performance/dist",
   "assetsByChunkName": {
-    "Satellites": "Satellites.6a96.js",
+    "Satellites": "Satellites.1b00.js",
     "main": [
       "main.df54.css",
-      "main.199e.js"
+      "main.50d8.js"
     ],
     "vendor": "vendor.0df8.js"
   },
   "assets": [
     {
-      "name": "Satellites.6a96.js",
-      "size": 10080,
+      "name": "7df90058736b06c669ab.worker.js",
+      "size": 1075,
+      "chunks": [
+      ],
+      "chunkNames": [
+      ],
+      "emitted": true
+    },
+    {
+      "name": "Satellites.1b00.js",
+      "size": 10350,
       "chunks": [
         0
       ],
       "chunkNames": [
         "Satellites"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "Satellites.1b00.js.br",
+      "size": 7157,
+      "chunks": [
+      ],
+      "chunkNames": [
       ],
       "emitted": true
     },
@@ -84,7 +102,7 @@
       "emitted": true
     },
     {
-      "name": "main.199e.js",
+      "name": "main.50d8.js",
       "size": 16690,
       "chunks": [
         1
@@ -95,7 +113,7 @@
       "emitted": true
     },
     {
-      "name": "main.199e.js.br",
+      "name": "main.50d8.js.br",
       "size": 11285,
       "chunks": [
       ],
@@ -115,8 +133,8 @@
       "emitted": true
     },
     {
-      "name": "precache-manifest.85419c6c19525d6c936f86d1720b8237.js",
-      "size": 1124,
+      "name": "precache-manifest.f04c35fe81032fb1affc9cb8357e0901.js",
+      "size": 1325,
       "chunks": [
       ],
       "chunkNames": [
@@ -162,10 +180,10 @@
         1
       ],
       "assets": [
-        "manifest.4555.bundle.js",
+        "manifest.bee0.bundle.js",
         "vendor.0df8.js",
         "main.df54.css",
-        "main.199e.js"
+        "main.50d8.js"
       ],
       "children": {
       },
@@ -181,10 +199,10 @@
         1
       ],
       "assets": [
-        "manifest.4555.bundle.js",
+        "manifest.bee0.bundle.js",
         "vendor.0df8.js",
         "main.df54.css",
-        "main.199e.js"
+        "main.50d8.js"
       ],
       "children": {
       },
@@ -196,7 +214,7 @@
         0
       ],
       "assets": [
-        "Satellites.6a96.js"
+        "Satellites.1b00.js"
       ],
       "children": {
       },
@@ -210,14 +228,14 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 10841,
+      "size": 11366,
       "names": [
         "Satellites"
       ],
       "files": [
-        "Satellites.6a96.js"
+        "Satellites.1b00.js"
       ],
-      "hash": "6a96c66439ab457bb9d2",
+      "hash": "1b009a1f61b8832398cb",
       "siblings": [
       ],
       "parents": [
@@ -286,7 +304,7 @@
           ],
           "reasons": [
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -295,7 +313,7 @@
               "loc": "2:0-40"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -316,11 +334,95 @@
         },
         {
           "id": 29,
+          "identifier": "/home/seb/Github/react-performance/node_modules/worker-loader/dist/cjs.js!/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/worker.tsx",
+          "name": "./node_modules/worker-loader/dist/cjs.js!./src/components/SatelliteList/worker.tsx",
+          "index": 49,
+          "index2": 47,
+          "size": 113,
+          "cacheable": false,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/index.tsx",
+          "issuerId": null,
+          "issuerName": "./src/components/SatelliteList/index.tsx",
+          "issuerPath": [
+            {
+              "id": 15,
+              "identifier": "multi ./src/index.tsx",
+              "name": "multi ./src/index.tsx"
+            },
+            {
+              "id": null,
+              "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx",
+              "name": "./src/index.tsx"
+            },
+            {
+              "id": null,
+              "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/App.tsx",
+              "name": "./src/App.tsx"
+            },
+            {
+              "id": null,
+              "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Home/index.tsx",
+              "name": "./src/components/Home/index.tsx"
+            },
+            {
+              "id": null,
+              "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx",
+              "name": "./src/components/Content/index.tsx"
+            },
+            {
+              "id": null,
+              "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/index.tsx",
+              "name": "./src/components/SatelliteList/index.tsx"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": 30,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+              "module": "./src/components/Content/index.tsx + 3 modules",
+              "moduleName": "./src/components/Content/index.tsx + 3 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "worker-loader!./worker",
+              "loc": "2:0-44"
+            },
+            {
+              "moduleId": 30,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+              "module": "./src/components/Content/index.tsx + 3 modules",
+              "moduleName": "./src/components/Content/index.tsx + 3 modules",
+              "type": "harmony import specifier",
+              "userRequest": "worker-loader!./worker",
+              "loc": "8:25-31"
+            }
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 6
+        },
+        {
+          "id": 30,
           "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "name": "./src/components/Content/index.tsx + 3 modules",
           "index": 45,
-          "index2": 49,
-          "size": 1980,
+          "index2": 50,
+          "size": 2392,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -355,6 +457,7 @@
           "optimizationBailout": [
             "ModuleConcatenation bailout: Cannot concat with ./node_modules/react/index.js (<- Module is not an ECMAScript module)",
             "ModuleConcatenation bailout: Cannot concat with ./src/images/icon.png (<- Module is not an ECMAScript module)",
+            "ModuleConcatenation bailout: Cannot concat with ./node_modules/worker-loader/dist/cjs.js!./src/components/SatelliteList/worker.tsx (<- Module is not an ECMAScript module)",
             "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/components/Home/index.tsx (referenced with import())"
           ],
           "depth": 4,
@@ -364,7 +467,7 @@
               "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx",
               "name": "./src/components/Content/index.tsx",
               "index": 45,
-              "index2": 49,
+              "index2": 50,
               "size": 404,
               "cacheable": true,
               "built": true,
@@ -507,8 +610,8 @@
               "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/index.tsx",
               "name": "./src/components/SatelliteList/index.tsx",
               "index": 48,
-              "index2": 48,
-              "size": 362,
+              "index2": 49,
+              "size": 769,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -585,8 +688,8 @@
               "id": null,
               "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Satellite/index.tsx",
               "name": "./src/components/Satellite/index.tsx",
-              "index": 49,
-              "index2": 47,
+              "index": 50,
+              "index2": 48,
               "size": 749,
               "cacheable": true,
               "built": true,
@@ -642,7 +745,7 @@
                   "moduleName": "./src/components/SatelliteList/index.tsx",
                   "type": "harmony side effect evaluation",
                   "userRequest": "../Satellite",
-                  "loc": "2:0-37"
+                  "loc": "3:0-37"
                 },
                 {
                   "moduleId": null,
@@ -651,7 +754,7 @@
                   "moduleName": "./src/components/SatelliteList/index.tsx",
                   "type": "harmony import specifier",
                   "userRequest": "../Satellite",
-                  "loc": "5:128-137"
+                  "loc": "15:134-143"
                 }
               ],
               "usedExports": [
@@ -694,9 +797,9 @@
       ],
       "files": [
         "main.df54.css",
-        "main.199e.js"
+        "main.50d8.js"
       ],
-      "hash": "199e78cb416911f2daac",
+      "hash": "50d8d865478a41664e65",
       "siblings": [
         2,
         3
@@ -1940,9 +2043,9 @@
         "manifest"
       ],
       "files": [
-        "manifest.4555.bundle.js"
+        "manifest.bee0.bundle.js"
       ],
-      "hash": "455574c959a496ccdd7c",
+      "hash": "bee0cd76f2278663a92d",
       "siblings": [
         1,
         3
@@ -2217,6 +2320,15 @@
               "moduleName": "./src/index.tsx + 12 modules",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
+              "loc": "1:0-26"
+            },
+            {
+              "moduleId": 27,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx df7cb89eaf8cf712ca500b3a87e0c59b",
+              "module": "./src/index.tsx + 12 modules",
+              "moduleName": "./src/index.tsx + 12 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "react",
               "loc": "1:0-51"
             },
             {
@@ -2227,15 +2339,6 @@
               "type": "harmony side effect evaluation",
               "userRequest": "react",
               "loc": "1:0-61"
-            },
-            {
-              "moduleId": 27,
-              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx df7cb89eaf8cf712ca500b3a87e0c59b",
-              "module": "./src/index.tsx + 12 modules",
-              "moduleName": "./src/index.tsx + 12 modules",
-              "type": "harmony side effect evaluation",
-              "userRequest": "react",
-              "loc": "1:0-26"
             },
             {
               "moduleId": 27,
@@ -2445,7 +2548,7 @@
               "loc": "27:8-13"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2454,7 +2557,7 @@
               "loc": "1:0-26"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2463,7 +2566,7 @@
               "loc": "1:0-26"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2472,16 +2575,16 @@
               "loc": "1:0-26"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
               "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "1:0-26"
+              "loc": "1:0-51"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2490,7 +2593,7 @@
               "loc": "4:12-17"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2499,7 +2602,7 @@
               "loc": "5:8-13"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2508,25 +2611,7 @@
               "loc": "5:12-17"
             },
             {
-              "moduleId": 29,
-              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
-              "module": "./src/components/Content/index.tsx + 3 modules",
-              "moduleName": "./src/components/Content/index.tsx + 3 modules",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "5:12-17"
-            },
-            {
-              "moduleId": 29,
-              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
-              "module": "./src/components/Content/index.tsx + 3 modules",
-              "moduleName": "./src/components/Content/index.tsx + 3 modules",
-              "type": "harmony import specifier",
-              "userRequest": "react",
-              "loc": "5:108-113"
-            },
-            {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2535,7 +2620,7 @@
               "loc": "6:8-13"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2544,7 +2629,7 @@
               "loc": "6:12-17"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2553,7 +2638,25 @@
               "loc": "6:12-17"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+              "module": "./src/components/Content/index.tsx + 3 modules",
+              "moduleName": "./src/components/Content/index.tsx + 3 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "6:13-21"
+            },
+            {
+              "moduleId": 30,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+              "module": "./src/components/Content/index.tsx + 3 modules",
+              "moduleName": "./src/components/Content/index.tsx + 3 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "7:4-13"
+            },
+            {
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2562,7 +2665,7 @@
               "loc": "7:8-13"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2571,7 +2674,7 @@
               "loc": "7:8-13"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2580,7 +2683,7 @@
               "loc": "7:12-17"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2589,7 +2692,7 @@
               "loc": "8:8-13"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2598,7 +2701,7 @@
               "loc": "8:8-13"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2607,7 +2710,7 @@
               "loc": "9:12-17"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -2616,13 +2719,31 @@
               "loc": "10:12-17"
             },
             {
-              "moduleId": 29,
+              "moduleId": 30,
               "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
               "module": "./src/components/Content/index.tsx + 3 modules",
               "moduleName": "./src/components/Content/index.tsx + 3 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
               "loc": "12:15-20"
+            },
+            {
+              "moduleId": 30,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+              "module": "./src/components/Content/index.tsx + 3 modules",
+              "moduleName": "./src/components/Content/index.tsx + 3 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "15:12-17"
+            },
+            {
+              "moduleId": 30,
+              "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+              "module": "./src/components/Content/index.tsx + 3 modules",
+              "moduleName": "./src/components/Content/index.tsx + 3 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "15:114-119"
             }
           ],
           "usedExports": true,
@@ -21760,6 +21881,15 @@
           "moduleName": "./src/index.tsx + 12 modules",
           "type": "harmony side effect evaluation",
           "userRequest": "react",
+          "loc": "1:0-26"
+        },
+        {
+          "moduleId": 27,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx df7cb89eaf8cf712ca500b3a87e0c59b",
+          "module": "./src/index.tsx + 12 modules",
+          "moduleName": "./src/index.tsx + 12 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "react",
           "loc": "1:0-61"
         },
         {
@@ -21788,15 +21918,6 @@
           "type": "harmony side effect evaluation",
           "userRequest": "react",
           "loc": "1:0-51"
-        },
-        {
-          "moduleId": 27,
-          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx df7cb89eaf8cf712ca500b3a87e0c59b",
-          "module": "./src/index.tsx + 12 modules",
-          "moduleName": "./src/index.tsx + 12 modules",
-          "type": "harmony side effect evaluation",
-          "userRequest": "react",
-          "loc": "1:0-26"
         },
         {
           "moduleId": 27,
@@ -21988,7 +22109,7 @@
           "loc": "27:8-13"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -21997,7 +22118,7 @@
           "loc": "1:0-26"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22006,7 +22127,7 @@
           "loc": "1:0-26"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22015,16 +22136,16 @@
           "loc": "1:0-26"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
           "type": "harmony side effect evaluation",
           "userRequest": "react",
-          "loc": "1:0-26"
+          "loc": "1:0-51"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22033,7 +22154,7 @@
           "loc": "4:12-17"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22042,7 +22163,7 @@
           "loc": "5:8-13"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22051,25 +22172,7 @@
           "loc": "5:12-17"
         },
         {
-          "moduleId": 29,
-          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
-          "module": "./src/components/Content/index.tsx + 3 modules",
-          "moduleName": "./src/components/Content/index.tsx + 3 modules",
-          "type": "harmony import specifier",
-          "userRequest": "react",
-          "loc": "5:12-17"
-        },
-        {
-          "moduleId": 29,
-          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
-          "module": "./src/components/Content/index.tsx + 3 modules",
-          "moduleName": "./src/components/Content/index.tsx + 3 modules",
-          "type": "harmony import specifier",
-          "userRequest": "react",
-          "loc": "5:108-113"
-        },
-        {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22078,7 +22181,7 @@
           "loc": "6:8-13"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22087,7 +22190,7 @@
           "loc": "6:12-17"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22096,7 +22199,25 @@
           "loc": "6:12-17"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+          "module": "./src/components/Content/index.tsx + 3 modules",
+          "moduleName": "./src/components/Content/index.tsx + 3 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "6:13-21"
+        },
+        {
+          "moduleId": 30,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+          "module": "./src/components/Content/index.tsx + 3 modules",
+          "moduleName": "./src/components/Content/index.tsx + 3 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "7:4-13"
+        },
+        {
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22105,7 +22226,7 @@
           "loc": "7:8-13"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22114,7 +22235,7 @@
           "loc": "7:8-13"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22123,7 +22244,7 @@
           "loc": "7:12-17"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22132,7 +22253,7 @@
           "loc": "8:8-13"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22141,7 +22262,7 @@
           "loc": "8:8-13"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22150,7 +22271,7 @@
           "loc": "9:12-17"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -22159,13 +22280,31 @@
           "loc": "10:12-17"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
           "loc": "12:15-20"
+        },
+        {
+          "moduleId": 30,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+          "module": "./src/components/Content/index.tsx + 3 modules",
+          "moduleName": "./src/components/Content/index.tsx + 3 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "15:12-17"
+        },
+        {
+          "moduleId": 30,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+          "module": "./src/components/Content/index.tsx + 3 modules",
+          "moduleName": "./src/components/Content/index.tsx + 3 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "15:114-119"
         }
       ],
       "usedExports": true,
@@ -42274,7 +42413,7 @@
       ],
       "reasons": [
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -42283,7 +42422,7 @@
           "loc": "2:0-40"
         },
         {
-          "moduleId": 29,
+          "moduleId": 30,
           "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
           "module": "./src/components/Content/index.tsx + 3 modules",
           "moduleName": "./src/components/Content/index.tsx + 3 modules",
@@ -42304,11 +42443,95 @@
     },
     {
       "id": 29,
+      "identifier": "/home/seb/Github/react-performance/node_modules/worker-loader/dist/cjs.js!/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/worker.tsx",
+      "name": "./node_modules/worker-loader/dist/cjs.js!./src/components/SatelliteList/worker.tsx",
+      "index": 49,
+      "index2": 47,
+      "size": 113,
+      "cacheable": false,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/index.tsx",
+      "issuerId": null,
+      "issuerName": "./src/components/SatelliteList/index.tsx",
+      "issuerPath": [
+        {
+          "id": 15,
+          "identifier": "multi ./src/index.tsx",
+          "name": "multi ./src/index.tsx"
+        },
+        {
+          "id": null,
+          "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/index.tsx",
+          "name": "./src/index.tsx"
+        },
+        {
+          "id": null,
+          "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/App.tsx",
+          "name": "./src/App.tsx"
+        },
+        {
+          "id": null,
+          "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Home/index.tsx",
+          "name": "./src/components/Home/index.tsx"
+        },
+        {
+          "id": null,
+          "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx",
+          "name": "./src/components/Content/index.tsx"
+        },
+        {
+          "id": null,
+          "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/index.tsx",
+          "name": "./src/components/SatelliteList/index.tsx"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+      ],
+      "reasons": [
+        {
+          "moduleId": 30,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+          "module": "./src/components/Content/index.tsx + 3 modules",
+          "moduleName": "./src/components/Content/index.tsx + 3 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "worker-loader!./worker",
+          "loc": "2:0-44"
+        },
+        {
+          "moduleId": 30,
+          "moduleIdentifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
+          "module": "./src/components/Content/index.tsx + 3 modules",
+          "moduleName": "./src/components/Content/index.tsx + 3 modules",
+          "type": "harmony import specifier",
+          "userRequest": "worker-loader!./worker",
+          "loc": "8:25-31"
+        }
+      ],
+      "usedExports": [
+        "default"
+      ],
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 6
+    },
+    {
+      "id": 30,
       "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx 4c8e34d270289f8d8754f9fa752febbf",
       "name": "./src/components/Content/index.tsx + 3 modules",
       "index": 45,
-      "index2": 49,
-      "size": 1980,
+      "index2": 50,
+      "size": 2392,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -42343,6 +42566,7 @@
       "optimizationBailout": [
         "ModuleConcatenation bailout: Cannot concat with ./node_modules/react/index.js (<- Module is not an ECMAScript module)",
         "ModuleConcatenation bailout: Cannot concat with ./src/images/icon.png (<- Module is not an ECMAScript module)",
+        "ModuleConcatenation bailout: Cannot concat with ./node_modules/worker-loader/dist/cjs.js!./src/components/SatelliteList/worker.tsx (<- Module is not an ECMAScript module)",
         "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./src/components/Home/index.tsx (referenced with import())"
       ],
       "depth": 4,
@@ -42352,7 +42576,7 @@
           "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Content/index.tsx",
           "name": "./src/components/Content/index.tsx",
           "index": 45,
-          "index2": 49,
+          "index2": 50,
           "size": 404,
           "cacheable": true,
           "built": true,
@@ -42495,8 +42719,8 @@
           "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/index.tsx",
           "name": "./src/components/SatelliteList/index.tsx",
           "index": 48,
-          "index2": 48,
-          "size": 362,
+          "index2": 49,
+          "size": 769,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -42573,8 +42797,8 @@
           "id": null,
           "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/Satellite/index.tsx",
           "name": "./src/components/Satellite/index.tsx",
-          "index": 49,
-          "index2": 47,
+          "index": 50,
+          "index2": 48,
           "size": 749,
           "cacheable": true,
           "built": true,
@@ -42630,7 +42854,7 @@
               "moduleName": "./src/components/SatelliteList/index.tsx",
               "type": "harmony side effect evaluation",
               "userRequest": "../Satellite",
-              "loc": "2:0-37"
+              "loc": "3:0-37"
             },
             {
               "moduleId": null,
@@ -42639,7 +42863,7 @@
               "moduleName": "./src/components/SatelliteList/index.tsx",
               "type": "harmony import specifier",
               "userRequest": "../Satellite",
-              "loc": "5:128-137"
+              "loc": "15:134-143"
             }
           ],
           "usedExports": [
@@ -43845,6 +44069,187 @@
       "children": [
       ],
       "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--6-2!node_modules/fast-sass-loader/lib/index.js!src/styles/main.scss"
+    },
+    {
+      "errors": [
+      ],
+      "warnings": [
+      ],
+      "publicPath": "",
+      "outputPath": "/home/seb/Github/react-performance/dist",
+      "assetsByChunkName": {
+        "main": "7df90058736b06c669ab.worker.js"
+      },
+      "assets": [
+        {
+          "name": "7df90058736b06c669ab.worker.js",
+          "size": 1075,
+          "chunks": [
+            0
+          ],
+          "chunkNames": [
+            "main"
+          ],
+          "emitted": true
+        }
+      ],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "main": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "7df90058736b06c669ab.worker.js"
+          ],
+          "children": {
+          },
+          "childAssets": {
+          }
+        }
+      },
+      "namedChunkGroups": {
+        "main": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "7df90058736b06c669ab.worker.js"
+          ],
+          "children": {
+          },
+          "childAssets": {
+          }
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 317,
+          "names": [
+            "main"
+          ],
+          "files": [
+            "7df90058736b06c669ab.worker.js"
+          ],
+          "hash": "1fa2ecc594f5947c8fff",
+          "siblings": [
+          ],
+          "parents": [
+          ],
+          "children": [
+          ],
+          "childrenByOrder": {
+          },
+          "modules": [
+            {
+              "id": 0,
+              "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/worker.tsx",
+              "name": "./node_modules/ts-loader!./src/components/SatelliteList/worker.tsx",
+              "index": 0,
+              "index2": 0,
+              "size": 317,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+              ],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/worker.tsx",
+                  "loc": "main"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module",
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "main",
+              "request": "!!/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/worker.tsx",
+              "reasons": [
+              ]
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/worker.tsx",
+          "name": "./node_modules/ts-loader!./src/components/SatelliteList/worker.tsx",
+          "index": 0,
+          "index2": 0,
+          "size": 317,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+          ],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "!!/home/seb/Github/react-performance/node_modules/ts-loader/index.js!/home/seb/Github/react-performance/src/components/SatelliteList/worker.tsx",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0
+        }
+      ],
+      "filteredModules": 0,
+      "children": [
+      ],
+      "name": "worker"
     }
   ]
 }
