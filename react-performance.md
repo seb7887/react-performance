@@ -4,20 +4,17 @@
 - [x] shouldComponentUpdate
 - [x] PureComponents
 - [x] react.memo, useMemo, useCallback
-- [ ] immutable -> immer
-- [ ] memoize selectors -> reselect
-- [ ] action creators -> typesafe-actions
+- [x] immutable -> immer
+- [x] memoize selectors -> reselect
 - [x] why did you update?
-- [ ] bind the functions outside of render -> reduce reconciliations
-- [ ] define constants outside of render -> reduce reconcialiations
-- [ ] avoid inline function definition in the render function -> reduce reconciliations
+- [x] bind the functions outside of render -> reduce reconciliations
+- [x] define constants outside of render -> reduce reconcialiations
+- [x] avoid inline function definition in the render function -> reduce reconciliations
 - [x] react fragments (<>) to avoid additional html element wrappers
-- [ ] throttling and debouncing
-- [ ] react suspense
+- [x] throttling and debouncing
+- [x] react suspense
 - [x] using webworkers for CPU extensive tasks -> sorting
-- [ ] virtualize long lists
-- [ ] consider server side rendering
-
+- [x] virtualize long lists
 
 ## shouldComponentUpdate with React Hooks
 
