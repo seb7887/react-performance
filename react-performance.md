@@ -1,28 +1,22 @@
 # React Performance Optimization
 
-- react profiler
-- shouldComponentUpdate
-- PureComponents
-- react.memo, useMemo, useCallback
-- immutable -> immer
-- memoize selectors -> reselect
-- action creators -> typesafe-actions
-- why did you update? (?)
-- bind the functions outside of render -> reduce reconciliations
-- define constants outside of render -> reduce reconcialiations
-- avoid inline function definition in the render function -> reduce reconciliations
-- conditionally firing useEffect hook `[something]` or never rerunning `[]`
-- multiple chunks files (webpack)
-- react fragments (<>) to avoid additional html element wrappers
-- throttling and debouncing
-- avoid using index as key for map
-- avoid props in initial states
-- spreading props on DOM elements
-- react suspense
-- using webworkers for CPU extensive tasks -> sorting
-- virtualize long lists
-- consider server side rendering
-- font-display (mmm webpack)
+- [x] react profiler
+- [x] shouldComponentUpdate
+- [x] PureComponents
+- [x] react.memo, useMemo, useCallback
+- [ ] immutable -> immer
+- [ ] memoize selectors -> reselect
+- [ ] action creators -> typesafe-actions
+- [x] why did you update?
+- [ ] bind the functions outside of render -> reduce reconciliations
+- [ ] define constants outside of render -> reduce reconcialiations
+- [ ] avoid inline function definition in the render function -> reduce reconciliations
+- [x] react fragments (<>) to avoid additional html element wrappers
+- [ ] throttling and debouncing
+- [ ] react suspense
+- [x] using webworkers for CPU extensive tasks -> sorting
+- [ ] virtualize long lists
+- [ ] consider server side rendering
 
 ## shouldComponentUpdate with React Hooks
 
