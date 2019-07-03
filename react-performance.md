@@ -4,7 +4,7 @@
 
 ## Introduction
 
-React uses several clever techniques to minimize the number of costly DOM operations required to update the UI. While this will lead to a faster user interface without specifically optimizing for performance for many cases, there are ways where you can still speed up your React application. This post will go over some useful techniques you can use to improve your React code.
+React uses several techniques to minimize the number of costly DOM operations required to update the UI. While this will lead to a faster user interface without specifically optimizing for performance for many cases, there are ways where you can still speed up your React application. This post will go over some useful techniques you can use to improve your React code. All examples are written in Typescript.
 
 ## Use React Profiler
 
@@ -12,7 +12,7 @@ The concept of the react profiler is to collect timing information about compone
 
 ### How to use it
 
-Basically, Profiler is a Component that you can extract from the default React package. Since it has a lowercase/underscore name, which a lot of linters frown upon, you’ll need to do one of the following:
+Basically, Profiler is a Component that you can extract from the default React package.
 
 ```typescript
 import React, { unstable_Profiler as Profiler } from 'react';
@@ -47,7 +47,7 @@ Then you must see:
 
 ![flame](./docs/images/prof1.png)
 
-The flame chart view represents the state of your application for a particular commit. Each bar in the chart represents a React component. The size and color of the bar represents how long it took to render the component and its children. (The width of a bar represents how much time was spent when the component last rendered and the color represents how much time was spent as part of the current commit.)
+The flame chart view represents the state of your application for a particular commit. Each bar in the chart represents a React component. The size and color of the bar represent how long it took to render the component and its children. (The width of a bar represents how much time was spent when the component last rendered and the color represents how much time was spent as part of the current commit.)
 
 ![chart](./docs/images/prof2.png)
 
@@ -57,7 +57,7 @@ Note that the numbers are relative so components will render faster in productio
 
 ## Why did you render
 
-One of the most common issues that affects performance in React is unnecessary render cycles. By default, React components will re-render whenever their parent renders, even if their props didn’t change.
+One of the most common issues that affect performance in React is unnecessary render cycles. By default, React components will re-render whenever their parent renders, even if their props didn’t change.
 
 `why-did-you-render` is a library that hooks into React and detects potentially unnecessary component renders. It detects when a component’s render method is called despite its props not having changed.
 
@@ -115,7 +115,7 @@ const Home: React.FC<IProps> = ({ satellites }) => {
 
 Memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. A memoized function is usually faster because if the function is called with the same values as the previous one then instead of executing function logic it would fetch the result from cache.
 
-In React, this method will do a shallow equal comparison of both props and context of the component based on strict equality.
+In React, this method will do a shallow equal comparison of both props and the context of the component based on strict equality.
 
 ```typescript
 const Satellite: React.FC<IProps> = ({ satellite }) => (
@@ -224,8 +224,8 @@ const Home: React.FC<IProps> = ({ satellites }) => {
 
 ## Using web workers for CPU extensive tasks
 
-Web workers makes it possible to run a script operation in a web application’s background thread, separate from the main execution thread. By performing the laborious processing in a separate thread, the main thread, which is usually the UI, is able to run without being blocked or slowed down.
-Web Workers works best when executing computation extensive operation since it executes code independent of other scripts in a separate thread in the background. This means it doesn’t affect the page’s performance.
+Web workers make it possible to run a script operation in a web application’s background thread, separate from the main execution thread. By performing the laborious processing in a separate thread, the main thread, which is usually the UI, is able to run without being blocked or slowed down.
+Web Workers work best when executing computation extensive operation since it executes code independent of other scripts in a separate thread in the background. This means it doesn’t affect the page’s performance.
 
 To get started, install `worker-loader`:
 
@@ -233,7 +233,7 @@ To get started, install `worker-loader`:
 npm i -D worker-loader
 ```
 
-Here’s a code without using Web Workers with Typescript:
+Then:
 
 ```typescript
 // custom.d.ts
@@ -310,9 +310,9 @@ There are some popular React libraries out there, like `react-window` and `react
 
 Throttling means delaying function execution. So instead of executing the event handler/function immediately, you’ll be adding a few milliseconds of delay when an event is triggered. This can be used when implementing infinite scrolling, for example.
 
-It can be implemented a number of ways. You can throttle by the number of events triggered or by the delay event handler being executed.
+It can be implemented in a number of ways. You can throttle by the number of events triggered or by the delay event handler being executed.
 
-Unlike throttling, debouncing is a technique to prevent the event trigger from being fired too often. If you are using lodash, you can wrap the function you want to call in lodash’s debounce function.
+Unlike throttling, debouncing is a technique to prevent the event trigger from being fired too often. If you are using `lodash`, you can wrap the function you want to call in lodash’s debounce function.
 
 ## Optimizing Redux
 
@@ -329,7 +329,7 @@ Data immutability, which comes from the functional programming world, can be app
 
 `immer` is a tiny package that allows you to work with immutable state in a more convenient way. It is based on the `copy-on-write` mechanism.
 
-The basic idea is that you will apply all your changes to a temporarily draftState, which is a proxy of the currentState. Once all your mutations are completed, Immer will produce the nextState based on the mutations to the draft state. This means that you can interact with your data by simply modifying it while keeping all the benefits of immutable data.
+The basic idea is that you will apply all your changes to a temporarily draftState, which is a proxy of the currentState. Once all your mutations are completed, `immer` will produce the nextState based on the mutations to the draft state. This means that you can interact with your data by simply modifying it while keeping all the benefits of immutable data.
 
 ```typescript
 import { produce } from 'immer';
@@ -354,7 +354,7 @@ export const satelliteReducer = (
 
 ### Memoize selectors
 
-Reselect is a simple selector library for Redux, which can be used for building memorized selectors. You can define selectors as a function, retrieving snippets of the Redux state for React components.
+`reselect` is a simple selector library for Redux, which can be used for building memorized selectors. You can define selectors as a function, retrieving snippets of the Redux state for React components.
 
 ```typescript
 import { createSelector } from 'reselect';
@@ -373,4 +373,4 @@ export const getActiveSatellites = createSelector(
 
 ## Conclusion
 
-There are many ways to optimize a React app, for example lazy loading components, using ServiceWorkers to cache application state, considering SSR, avoiding unnecessary renders etc.. That said, before considering optimization, it’s worth understanding how React components work, understanding diffing algorithms, and how rendering works in React. These are all important concepts to take into consideration when optimizing your application.
+There are many ways to optimize a React app, for example lazy loading components, using ServiceWorkers to cache application state, considering SSR, avoiding unnecessary renders, etc. That said, before considering optimization, it’s worth understanding how React components work, understanding diffing algorithms, and how rendering works in React. These are all important concepts to take into consideration when optimizing your application.
